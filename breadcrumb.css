@@ -1,0 +1,18 @@
+.breadcrumb li {
+  display: inline;
+  text-decoration: underline;
+}
+.breadcrumb .location li+.location li::before  {
+  content: "/";
+}
+.breadcrumb a:hover  {
+  color: indigo;
+}
+.breadcrumb li.attribute  {
+  color: green;
+}
+.breadcrumb li.attribute li::after  {
+  content: "x";
+  font-size: 8px;
+  vertical-align: super;  
+}
